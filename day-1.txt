@@ -1,0 +1,103 @@
+SCM- software config management
+package manager in linux distributions
+configuration Items
+infra as a code
+how to write and understand a vargrant file along with docker(VM)
+
+***************************************************************
+how to create vm using vagrant file .
+1-create a new folder in drive e.g "C:\Windows\System32\cmd.exe"
+2- place Vagrant file over there without any extension 
+remove the extension
+3- open cmd prompt at that particular folder path
+4- use dir command to check that vagrant file is present or not
+5- vagrant box list command to check any box is present or not
+6- you need a box file which you must download to create a vm.
+
+
+vagrant init viniciusfs/centos7
+vagrant up --provider virtualbox
+vagrant global-status //this is to know how many guest OS are there on hyperV
+
+
+Hypervisor examples : virtual box or vmware 
+
+security features :SSl handshake important between puppet master and the puppet agents or nodes
+box file along with vagrantfile is like a CD rom set up been used 1 cd many number of mchines can be set up
+
+
+
+
+
+
+
+
+
+
+
+
+***************************************************************
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+vagrant commands 
+vagrant box list
+AIO client all in ne client
+  1  apt-get update
+    2  clear
+    3  nano /etc/apt/apt.conf
+    4  apt-get update
+    5  wget h
+    6  http://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+    7  wget http://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+    8  sudo dpkg -i puppetlabs-release-pc1-xenial.deb
+    9  apt-get-update
+   10  apt-get update
+   11  apt-get install puppet-agent
+   12  date
+   13  cd/opd
+   14  cd dir
+   15  cd /opt
+   16  ls
+   17  cd puppetlabs/bin
+   18  ls -l
+   19  puppet-agent --version
+   20  history
+   21  cd /etc/puppetlabs/puppet/
+   22  nano puppet.conf
+   23  cd..
+   24  cd
+   25  cat /etc/profile.d/puppet-agent.sh
+   26  cd /etc/puppetlabs//puppet/
+   27  export PATH=$PATH:/opt/puppetlabs/bin
+   28  puppet-agent --version
+   29  puppet --version
+   30  puppet agent --version
+   31  history
+   32  root@puppetmaster2:/etc/puppetlabs/puppet# puppet resource user bob
+user { 'bob':
+  ensure => 'absent',
+}
+----------------------
+   33   1  whoami
+        2  history
+-------------------------
+vagrant init viniciusfs/centos7
+vagrant up --provider virtualbox
+vagrant global-status //this is to know how many guest OS are there on hyperV 
+vagrant box list
+vagrant provision <id>
+
+
+
+
+wiki.vm.network "private_network", ip: "172.31.0.207" port 2222
+ubuntu  "172.31.0.202"   port 2200
+  
+vagrant ssh
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
